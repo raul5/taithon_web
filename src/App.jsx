@@ -367,7 +367,7 @@ const App = () => {
       <section id="metodologia" className="py-32 md:py-48 px-6 bg-dark text-white relative overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
           <img 
-            src="https://images.unsplash.com/photo-1590483736622-398541ce04ec?q=80&w=2070&auto=format&fit=crop" 
+            src="https://images.unsplash.com/photo-1603348708701-9ef0c4f773da?q=80&w=2070&auto=format&fit=crop" 
             alt="Raw material texture" 
             className="w-full h-full object-cover mix-blend-overlay"
           />
