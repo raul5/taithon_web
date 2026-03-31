@@ -132,7 +132,7 @@ const ShufflerCard = () => {
         <h3 className="text-2xl font-heading font-bold mb-2">Atención & Ventas</h3>
         <p className="opacity-70 font-data text-sm">Agentes IA Atendiendo 24/7</p>
       </div>
-      <div className="relative flex-1 mt-auto h-[160px]">
+      <div className="relative flex-1 mt-auto h-[160px] min-h-[160px]">
         {activeItems.map((item, idx) => (
           <div 
             key={item.title}
@@ -173,7 +173,7 @@ const TypewriterCard = () => {
         <h3 className="text-2xl font-heading font-bold mb-2">Automatización de Procesos</h3>
         <p className="opacity-70 font-data text-sm">Escalado Ágil y Sostenible</p>
       </div>
-      <div className="flex-1 bg-dark text-primary rounded-xl p-5 font-data text-sm flex flex-col relative overflow-hidden">
+      <div className="flex-1 bg-dark text-primary rounded-xl p-5 font-data text-sm flex flex-col relative overflow-hidden min-h-[180px]">
         <div className="flex items-center gap-2 mb-4 border-b border-primary/20 pb-2">
           <Terminal size={14} />
           <span className="text-xs uppercase tracking-widest opacity-60 flex items-center gap-2">
@@ -355,7 +355,7 @@ const App = () => {
       {/* FEATURES SECTION */}
       <section id="features" className="py-32 px-6 bg-primary rounded-t-[3rem] -mt-10 relative z-20">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 h-[400px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:h-[400px]">
             <ShufflerCard />
             <TypewriterCard />
             <SchedulerCard />
