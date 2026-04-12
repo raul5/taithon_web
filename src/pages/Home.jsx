@@ -545,6 +545,7 @@ const Home = () => {
             <div className="flex flex-col gap-4">
               <span className="font-data opacity-40 uppercase tracking-widest text-xs mb-2">Legal</span>
               <a href="/politica-privacidad" className="hover:text-accent transition-colors">Privacidad</a>
+              <a href="/politica-cookies" className="hover:text-accent transition-colors">Cookies</a>
               <a href="/aviso-legal" className="hover:text-accent transition-colors">Aviso Legal</a>
             </div>
           </div>
