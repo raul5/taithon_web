@@ -23,4 +23,4 @@ Configurar y ejecutar el despliegue del proyecto `taithon-landing` en la platafo
 - **Error de Política en Windows:** Si PowerShell bloquea `npx`, ejecutar: `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`.
 - **Restricción de Nombres:** Vercel exige nombres en minúsculas. Si la carpeta tiene mayúsculas, se debe usar `--name <nombre-en-minusculas>`.
 - **Falta de Login:** Si el comando falla por falta de login, el usuario debe ejecutar `npx vercel login` manualmente una vez.
-- **Configuración de Vite:** Vite requiere que el `root` esté bien configurado en Vercel si no se detecta automáticamente.
+- **Error 404 en subrutas:** En proyectos con React Router, las rutas como `/aviso-legal` dan error 404 al recargar. Se soluciona creando un `vercel.json` en la raíz con: `{"rewrites": [{"source": "/(.*)", "destination": "/index.html"}]}`.
